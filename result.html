@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+   <body>
+      
+      
+      <table border = 1>
+         <thead>
+            <td>by</td>
+            
+            <td>sentiment</td>
+           
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["by"]}}</td>
+               
+               <td>{{row["sentiment"]}}</td>
+               
+            </tr>
+         {% endfor %}
+      </table>
+ 
+   </body>
+</html>
